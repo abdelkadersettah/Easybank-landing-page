@@ -16,9 +16,18 @@ html {
 
 body {
   font-family: var(--font-primary);
+  font-size: var(--font-size-primary);
 }
 
 :root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
   --font-primary: 'Public Sans';
+  --font-size-primary: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
