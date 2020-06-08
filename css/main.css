@@ -1,0 +1,24 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+:root {
+  --font-primary: 'Public Sans';
+}
+/*# sourceMappingURL=main.css.map */
