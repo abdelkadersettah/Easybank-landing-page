@@ -1,14 +1,16 @@
 .main-nav {
   background-color: var(--white);
   position: absolute;
-  top: var(--margin-medium);
+  top: calc(var(--padding-medium) * 2.5);
   background-color: yellow;
+  border-radius: 0.4em;
   width: 80%;
   padding: var(--padding-medium) 0;
 
   &__list {
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
+      text-align: center;
     }
   }
   &__link {

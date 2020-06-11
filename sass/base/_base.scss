@@ -16,8 +16,8 @@ html {
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-primary);
-  // color: $color-grey-dark-2;
-  // font-weight: 300;
+  color: var(--dark-blue);
+  font-weight: 400;
 }
 
 // reset list
@@ -30,8 +30,8 @@ a,
 a:link,
 a:active {
   text-decoration: none;
-  color: black;
   background: none;
   border: none;
   cursor: pointer;
+  display: inline-block;
 }
