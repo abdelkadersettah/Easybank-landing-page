@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--padding-medium);
+  position: relative;
+
+  &__logo {
+  }
+}

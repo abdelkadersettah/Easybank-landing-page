@@ -8,6 +8,9 @@
   --white: hsl(0, 0%, 100%);
   --font-primary: 'Public Sans';
   --font-size-primary: 1.8rem;
+  --padding-medium: 2em;
+  --margin-small: 1.5em;
+  --margin-medium: 2em;
 }
 
 :root {
@@ -31,7 +34,56 @@ body {
   font-size: var(--font-size-primary);
 }
 
+ul {
+  list-style: none;
+}
+
+button,
+a,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .display-flex {
   display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.display-none {
+  display: none;
+}
+
+.header {
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--padding-medium);
+  position: relative;
+}
+
+.main-nav {
+  background-color: var(--white);
+  position: absolute;
+  top: var(--margin-medium);
+  background-color: yellow;
+  width: 80%;
+  padding: var(--padding-medium) 0;
+}
+
+.main-nav__list:not(:last-child) {
+  margin-bottom: var(--margin-medium);
 }
 /*# sourceMappingURL=main.css.map */

@@ -19,3 +19,19 @@ body {
   // color: $color-grey-dark-2;
   // font-weight: 300;
 }
+
+// reset list
+ul {
+  list-style: none;
+}
+// reset ancer element
+button,
+a,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

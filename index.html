@@ -29,16 +29,20 @@
     </style>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
+    <header class="header display-flex">
+      <div class="header-logo">
         <a href="logo_link" title="back to the home page">
           <picture>
-            <source media="" srcset="./images/logo.svg" />
-            <img src="./images/logo.svg" alt="logo" />
+            <source
+              class="header-logo__img"
+              media=""
+              srcset="./images/logo.svg"
+            />
+            <img class="header-logo__img" src="./images/logo.svg" alt="logo" />
           </picture>
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav display-flex flex-center">
         <ul class="main-nav_primary">
           <li class="main-nav__list">
             <a href="#" class="main-nav__link">Home</a>
@@ -57,6 +61,15 @@
           </li>
         </ul>
       </nav>
+      <button class="hamburger-btn">
+        <img
+          class="hamburger-btn__img"
+          src="./images/icon-hamburger.svg"
+          alt=""
+          srcset=""
+        />
+      </button>
+      <button class="header__cta">Request Invit</button>
     </header>
     <!-- 
 Home About Contact Blog Careers Request Invit
@@ -92,12 +105,11 @@ e Next generation digital
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
      -->
-
     <!-- flex container -->
-    <div class="display-flex">
-      <div class="display-flex_items">col-1-of-2</div>
-      <div class="display-flex_items">col-1-of-2</div>
-      <div class="display-flex_items">col-1-of-2</div>
-    </div>
+    <!-- <div class="display-flex">
+       <div class="display-flex_items">col-1-of-2</div>
+       <div class="display-flex_items">col-1-of-2</div>
+       <div class="display-flex_items">col-1-of-2</div>
+     </div> -->
   </body>
 </html>

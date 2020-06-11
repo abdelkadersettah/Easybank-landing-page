@@ -1,0 +1,16 @@
+.main-nav {
+  background-color: var(--white);
+  position: absolute;
+  top: var(--margin-medium);
+  background-color: yellow;
+  width: 80%;
+  padding: var(--padding-medium) 0;
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: var(--margin-medium);
+    }
+  }
+  &__link {
+  }
+}
