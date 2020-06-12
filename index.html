@@ -30,18 +30,16 @@
   </head>
   <body>
     <header class="header display-flex">
-      <div class="header-logo">
-        <a href="logo_link" title="back to the home page">
-          <picture>
-            <source
-              class="header-logo__img"
-              media=""
-              srcset="./images/logo.svg"
-            />
-            <img class="header-logo__img" src="./images/logo.svg" alt="logo" />
-          </picture>
-        </a>
-      </div>
+      <a class="header__logo" href="logo_link" title="back to the home page">
+        <picture>
+          <source
+            class="header-logo--img"
+            media=""
+            srcset="./images/logo.svg"
+          />
+          <img class="header-logo--img" src="./images/logo.svg" alt="logo" />
+        </picture>
+      </a>
       <nav class="main-nav display-flex flex-center">
         <ul class="main-nav_primary">
           <li class="main-nav__list">
@@ -63,13 +61,13 @@
       </nav>
       <button class="hamburger-btn">
         <img
-          class="hamburger-btn__img"
+          class="hamburger-btn--img"
           src="./images/icon-hamburger.svg"
           alt=""
           srcset=""
         />
       </button>
-      <button class="header__cta">Request Invit</button>
+      <button class="btn btn--primary header__cta">Request Invit</button>
     </header>
     <!-- 
 Home About Contact Blog Careers Request Invit

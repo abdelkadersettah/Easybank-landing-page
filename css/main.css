@@ -1,20 +1,4 @@
 :root {
-  --dark-blue: hsl(233, 26%, 24%);
-  --lime-green: hsl(136, 65%, 51%);
-  --bright-cyan: hsl(192, 70%, 51%);
-  --grayish-blue: hsl(233, 8%, 62%);
-  --light-grayish-blue: hsl(220, 16%, 96%);
-  --very-light-gray: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --font-primary: 'Public Sans';
-  --font-size-primary: 1.8rem;
-  --padding-small: 1.5em;
-  --padding-medium: 2em;
-  --margin-small: 1.5em;
-  --margin-medium: 2em;
-}
-
-:root {
   box-sizing: border-box;
 }
 
@@ -35,6 +19,7 @@ body {
   font-size: var(--font-size-primary);
   color: var(--dark-blue);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 ul {
@@ -69,26 +54,93 @@ a:active {
   display: none;
 }
 
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --font-primary: 'Public Sans';
+  --font-size-primary: 1.8rem;
+  --padding-small: 0.8em;
+  --padding-medium: 1.5em;
+  --padding-large: 2em;
+  --margin-small: 1em;
+  --margin-medium: 1.5em;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: black;
+  padding: var(--padding-small) var(--padding-large);
+  border: currentColor;
+  border-radius: 2em;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.btn--primary {
+  background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+  color: var(--white);
+}
+
+.hamburger-btn {
+  height: 1.2em;
+}
+
+.hamburger-btn--img {
+  height: 100%;
+}
+
 .header {
   background-color: var(--white);
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding-small) var(--padding-medium);
+  padding: var(--padding-medium) var(--padding-large);
   position: relative;
+  background-color: yellow;
+}
+
+.header__logo {
+  height: 1.2em;
+}
+
+.header__logo--img {
+  height: 100%;
+}
+
+.header__cta {
+  display: none;
 }
 
 .main-nav {
   background-color: var(--white);
   position: absolute;
-  top: calc(var(--padding-medium) * 2.5);
+  top: calc(var(--padding-large) * 3);
   background-color: yellow;
   border-radius: 0.4em;
   width: 80%;
   padding: var(--padding-medium) 0;
+  color: var(--dark-blue);
+  display: none;
+}
+
+.main-nav--active {
+  display: flex;
 }
 
 .main-nav__list:not(:last-child) {
   margin-bottom: var(--margin-medium);
   text-align: center;
+}
+
+.main-nav__link {
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

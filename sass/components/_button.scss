@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: black;
+  padding: var(--padding-small) var(--padding-large);
+  border: currentColor;
+  border-radius: 2em;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  &--primary {
+    background: linear-gradient(
+      to right,
+      var(--lime-green),
+      var(--bright-cyan)
+    );
+    color: var(--white);
+  }
+}
+.hamburger-btn {
+  height: 1.2em;
+  &--img {
+    height: 100%;
+  }
+}

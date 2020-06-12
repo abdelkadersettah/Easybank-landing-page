@@ -2,9 +2,17 @@
   background-color: var(--white);
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding-small) var(--padding-medium);
+  padding: var(--padding-medium) var(--padding-large);
   position: relative;
+  background-color: yellow;
 
   &__logo {
+    height: 1.2em;
+    &--img {
+      height: 100%;
+    }
+  }
+  &__cta {
+    display: none;
   }
 }
