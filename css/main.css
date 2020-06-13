@@ -37,6 +37,19 @@ a:active {
   display: inline-block;
 }
 
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: var(--margin-medium);
+}
+
+.heading-primary__sub {
+  color: var(--grayish-blue);
+  font-size: 1.8rem;
+  margin-bottom: var(--margin-medium);
+}
+
 .display-flex {
   display: flex;
 }
@@ -44,10 +57,6 @@ a:active {
 .flex-center {
   justify-content: center;
   align-content: center;
-}
-
-.flex-column {
-  flex-direction: column;
 }
 
 .display-none {
@@ -64,11 +73,12 @@ a:active {
   --white: hsl(0, 0%, 100%);
   --font-primary: 'Public Sans';
   --font-size-primary: 1.8rem;
-  --padding-small: 0.8em;
-  --padding-medium: 1.5em;
-  --padding-large: 2em;
-  --margin-small: 1em;
-  --margin-medium: 1.5em;
+  --padding-small: 01rem;
+  --padding-medium: 2rem;
+  --padding-large: 3rem;
+  --margin-small: 01rem;
+  --margin-medium: 2rem;
+  --margin-large: 3rem;
 }
 
 .btn {
@@ -120,7 +130,7 @@ a:active {
 .main-nav {
   background-color: var(--white);
   position: absolute;
-  top: calc(var(--padding-large) * 3);
+  top: calc(var(--padding-large) * 2.5);
   border-radius: 0.4em;
   width: 80%;
   padding: var(--padding-medium) 0;
@@ -141,5 +151,27 @@ a:active {
   color: inherit;
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+.hero {
+  padding: 0 var(--padding-large);
+  flex-direction: column;
+}
+
+.hero__inner {
+  text-align: center;
+}
+
+.hero__image {
+  width: 100vw;
+  padding: 0;
+}
+
+.hero__image--1 {
+  width: 100%;
+}
+
+.hero__image--1 img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
