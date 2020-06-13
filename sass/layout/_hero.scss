@@ -1,15 +1,29 @@
 .hero {
-  padding: 0 var(--padding-large);
+  background-color: var(--light-grayish-blue);
   flex-direction: column;
+  width: 100%;
   &__inner {
     text-align: center;
+    padding: 0 var(--padding-large);
+    order: 2;
   }
 
   &__image {
-    width: 100vw;
     padding: 0;
+    overflow: hidden;
+    position: relative;
+    order: 1;
     &--1 {
-      width: 100%;
+      img {
+        width: 100%;
+        transform: translateY(-22%);
+      }
+    }
+    &--2 {
+      position: absolute;
+      left: 0;
+      padding: 0 var(--padding-large);
+      top: -32%;
       img {
         width: 100%;
       }

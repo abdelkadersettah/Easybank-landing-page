@@ -154,24 +154,37 @@ a:active {
 }
 
 .hero {
-  padding: 0 var(--padding-large);
+  background-color: var(--light-grayish-blue);
   flex-direction: column;
+  width: 100%;
 }
 
 .hero__inner {
   text-align: center;
+  padding: 0 var(--padding-large);
+  order: 2;
 }
 
 .hero__image {
-  width: 100vw;
   padding: 0;
-}
-
-.hero__image--1 {
-  width: 100%;
+  overflow: hidden;
+  position: relative;
+  order: 1;
 }
 
 .hero__image--1 img {
+  width: 100%;
+  transform: translateY(-22%);
+}
+
+.hero__image--2 {
+  position: absolute;
+  left: 0;
+  padding: 0 var(--padding-large);
+  top: -32%;
+}
+
+.hero__image--2 img {
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
