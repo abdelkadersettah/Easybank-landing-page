@@ -1,12 +1,16 @@
 .main-nav {
   background-color: var(--white);
   position: absolute;
-  top: calc(var(--padding-large) * 2.5);
+  z-index: 100;
+  top: calc(var(--padding-large) * 3);
   border-radius: 0.4em;
-  width: 80%;
+  width: 90%;
   padding: var(--padding-medium) 0;
+  left: 5%;
+  right: 5%;
   color: var(--dark-blue);
   display: none;
+
   &--active {
     display: flex;
   }
