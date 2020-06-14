@@ -134,6 +134,7 @@ a:active {
   top: calc(var(--padding-large) * 3);
   border-radius: 0.4em;
   width: 90%;
+  min-height: fit-content;
   padding: var(--padding-medium) 0;
   left: 5%;
   right: 5%;
@@ -152,7 +153,7 @@ a:active {
 
 .main-nav__link {
   color: inherit;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
