@@ -204,4 +204,8 @@ a:active {
 .section-hero__image--2 img {
   width: 100%;
 }
+
+.section-features {
+  background-color: var(--light-grayish-blue);
+}
 /*# sourceMappingURL=main.css.map */
