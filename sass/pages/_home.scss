@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
   background-color: var(--white);
   flex-direction: column;
   width: 100%;
@@ -9,7 +9,6 @@
     padding: 0 var(--padding-large);
     order: 2;
   }
-
   &__image {
     position: relative;
     padding: 0;
@@ -33,6 +32,6 @@
     }
   }
 }
-.section-features {
+.features {
   background-color: var(--light-grayish-blue);
 }

@@ -168,20 +168,20 @@ a:active {
   background-size: 100% 5px;
 }
 
-.section-hero {
+.hero {
   background-color: var(--white);
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
 }
 
-.section-hero__inner {
+.hero__inner {
   text-align: center;
   padding: 0 var(--padding-large);
   order: 2;
 }
 
-.section-hero__image {
+.hero__image {
   position: relative;
   padding: 0;
   overflow: hidden;
@@ -189,23 +189,23 @@ a:active {
   height: 80vw;
 }
 
-.section-hero__image--1 img {
+.hero__image--1 img {
   width: 100%;
   transform: translateY(-16%);
 }
 
-.section-hero__image--2 {
+.hero__image--2 {
   position: absolute;
   left: 0;
   padding: 0 calc(var(--padding-large) - 2%);
   top: -38%;
 }
 
-.section-hero__image--2 img {
+.hero__image--2 img {
   width: 100%;
 }
 
-.section-features {
+.features {
   background-color: var(--light-grayish-blue);
 }
 /*# sourceMappingURL=main.css.map */
