@@ -47,7 +47,7 @@ a:active {
 .heading-primary__sub {
   color: var(--grayish-blue);
   font-size: 1.8rem;
-  margin-bottom: var(--margin-medium);
+  margin-bottom: 2.5em;
 }
 
 .display-flex {
@@ -83,9 +83,9 @@ a:active {
 
 .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: black;
-  padding: var(--padding-small) var(--padding-large);
+  padding: 1em 2.1em;
   border: currentColor;
   border-radius: 2em;
   cursor: pointer;
@@ -96,6 +96,10 @@ a:active {
 .btn--primary {
   background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
   color: var(--white);
+}
+
+.btn--primary:hover, .btn--primary:active {
+  filter: brightness(1.25);
 }
 
 .hamburger-btn {
@@ -157,10 +161,18 @@ a:active {
   font-weight: 400;
 }
 
+.main-nav__link:active, .main-nav__link:hover {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  background: linear-gradient(to right, var(--lime-green), var(--bright-cyan)) 0 100% no-repeat;
+  background-size: 100% 5px;
+}
+
 .hero {
-  background-color: var(--light-grayish-blue);
+  background-color: var(--white);
   flex-direction: column;
   width: 100%;
+  padding-bottom: 6em;
 }
 
 .hero__inner {

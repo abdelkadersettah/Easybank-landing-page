@@ -26,5 +26,18 @@
     color: inherit;
     font-size: 2rem;
     font-weight: 400;
+    &:active,
+    &:hover {
+      border-bottom: 3px solid transparent;
+      padding-bottom: 5px;
+      background: linear-gradient(
+          to right,
+          var(--lime-green),
+          var(--bright-cyan)
+        )
+        0 100% no-repeat;
+
+      background-size: 100% 5px;
+    }
   }
 }

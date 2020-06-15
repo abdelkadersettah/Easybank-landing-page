@@ -1,7 +1,8 @@
 .hero {
-  background-color: var(--light-grayish-blue);
+  background-color: var(--white);
   flex-direction: column;
   width: 100%;
+  padding-bottom: 6em;
 
   &__inner {
     text-align: center;
