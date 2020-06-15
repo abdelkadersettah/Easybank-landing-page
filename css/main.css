@@ -168,20 +168,20 @@ a:active {
   background-size: 100% 5px;
 }
 
-.hero {
+.section-hero {
   background-color: var(--white);
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
 }
 
-.hero__inner {
+.section-hero__inner {
   text-align: center;
   padding: 0 var(--padding-large);
   order: 2;
 }
 
-.hero__image {
+.section-hero__image {
   position: relative;
   padding: 0;
   overflow: hidden;
@@ -189,19 +189,19 @@ a:active {
   height: 80vw;
 }
 
-.hero__image--1 img {
+.section-hero__image--1 img {
   width: 100%;
   transform: translateY(-16%);
 }
 
-.hero__image--2 {
+.section-hero__image--2 {
   position: absolute;
   left: 0;
   padding: 0 calc(var(--padding-large) - 2%);
   top: -38%;
 }
 
-.hero__image--2 img {
+.section-hero__image--2 img {
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
