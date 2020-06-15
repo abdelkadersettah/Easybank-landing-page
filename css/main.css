@@ -41,13 +41,13 @@ a:active {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: var(--margin-medium);
+  margin-bottom: var(--margin-large);
 }
 
 .heading-primary__sub {
   color: var(--grayish-blue);
   font-size: 1.8rem;
-  margin-bottom: 2.5em;
+  margin-bottom: 3.2em;
 }
 
 .display-flex {
@@ -75,7 +75,8 @@ a:active {
   --font-size-primary: 1.8rem;
   --padding-small: 01rem;
   --padding-medium: 2rem;
-  --padding-large: 3rem;
+  --padding-large: 4rem;
+  --padding-x-large: 7rem;
   --margin-small: 01rem;
   --margin-medium: 2rem;
   --margin-large: 3rem;
@@ -207,5 +208,15 @@ a:active {
 
 .features {
   background-color: var(--light-grayish-blue);
+  flex-direction: column;
+  padding: var(--padding-x-large) var(--padding-large);
+}
+
+.features__card-box {
+  flex-direction: column;
+}
+
+.features__title {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

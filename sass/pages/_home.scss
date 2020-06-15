@@ -34,4 +34,13 @@
 }
 .features {
   background-color: var(--light-grayish-blue);
+  flex-direction: column;
+  padding: var(--padding-x-large) var(--padding-large);
+
+  &__card-box {
+    flex-direction: column;
+  }
+  &__title {
+    text-align: center;
+  }
 }
