@@ -136,12 +136,9 @@ a:active {
   position: relative;
 }
 
-.header__logo {
-  text-align: center;
-}
-
 .header__logo--img {
   height: 1.3em;
+  vertical-align: middle;
 }
 
 .header__cta {
@@ -152,7 +149,7 @@ a:active {
   background-color: var(--white);
   position: absolute;
   z-index: 100;
-  top: calc(var(--padding-large) * 3);
+  top: calc(var(--padding-large) * 2);
   border-radius: 0.4em;
   width: 90%;
   min-height: fit-content;
@@ -194,6 +191,7 @@ a:active {
 
 .hero__inner {
   text-align: center;
+  padding: 0 var(--padding-large);
   order: 2;
 }
 

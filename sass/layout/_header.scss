@@ -6,9 +6,9 @@
   position: relative;
 
   &__logo {
-    text-align: center;
     &--img {
       height: 1.3em;
+      vertical-align: middle;
     }
   }
   &__cta {
