@@ -1,2 +1,6 @@
 .card {
+  text-align: center;
+  &__figure {
+    margin-bottom: 1em;
+  }
 }

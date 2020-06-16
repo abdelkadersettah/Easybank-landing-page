@@ -1,12 +1,18 @@
-.heading-primary {
-  font-size: 4rem;
-  font-weight: 400;
+.text {
   line-height: 1.5;
   margin-bottom: var(--margin-large);
+  &--primary {
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+  &--secondary {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
 
   &__sub {
     color: var(--grayish-blue);
     font-size: 1.8rem;
-    margin-bottom: 3.2em;
+    margin-bottom: 3.5em;
   }
 }
