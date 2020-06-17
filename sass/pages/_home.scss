@@ -47,7 +47,6 @@
   }
 }
 .article {
-  padding: 0 var(--padding-large);
-  padding-top: var(--padding-x-large);
+  padding: var(--padding-x-large) var(--padding-large);
   background-color: var(--very-light-gray);
 }
