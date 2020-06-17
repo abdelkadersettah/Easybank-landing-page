@@ -1,0 +1,39 @@
+.article {
+  &__title {
+    text-align: center;
+  }
+  &__box {
+    margin-top: var(--margin-x-large);
+  }
+  &__card {
+    background-color: var(--white);
+    margin-bottom: var(--margin-large);
+  }
+  &__figure {
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__body {
+    padding: var(--padding-medium);
+    padding-bottom: var(--padding-x-large);
+  }
+  &__subtitle,
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--grayish-blue);
+  }
+  &__title {
+    margin-bottom: var(--margin-medium);
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    text-align: left;
+  }
+  &__subtitle {
+    margin-bottom: var(--margin-medium);
+  }
+}

@@ -88,6 +88,7 @@ a:active {
   --margin-small: 01rem;
   --margin-medium: 2rem;
   --margin-large: 3rem;
+  --margin-x-large: 5rem;
 }
 
 .btn {
@@ -126,6 +127,51 @@ a:active {
 
 .card__figure {
   margin-bottom: 1em;
+}
+
+.article__title {
+  text-align: center;
+}
+
+.article__box {
+  margin-top: var(--margin-x-large);
+}
+
+.article__card {
+  background-color: var(--white);
+  margin-bottom: var(--margin-large);
+}
+
+.article__figure {
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.article__image {
+  width: 100%;
+}
+
+.article__body {
+  padding: var(--padding-medium);
+  padding-bottom: var(--padding-x-large);
+}
+
+.article__subtitle, .article__text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--grayish-blue);
+}
+
+.article__title {
+  margin-bottom: var(--margin-medium);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--dark-blue);
+  text-align: left;
+}
+
+.article__subtitle {
+  margin-bottom: var(--margin-medium);
 }
 
 .header {
@@ -232,5 +278,11 @@ a:active {
 
 .features__title {
   text-align: center;
+}
+
+.article {
+  padding: 0 var(--padding-large);
+  padding-top: var(--padding-x-large);
+  background-color: var(--very-light-gray);
 }
 /*# sourceMappingURL=main.css.map */

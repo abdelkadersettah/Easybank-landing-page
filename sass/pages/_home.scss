@@ -46,3 +46,8 @@
     text-align: center;
   }
 }
+.article {
+  padding: 0 var(--padding-large);
+  padding-top: var(--padding-x-large);
+  background-color: var(--very-light-gray);
+}
