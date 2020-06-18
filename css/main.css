@@ -231,6 +231,15 @@ a:active {
   background-size: 100% 5px;
 }
 
+.footer {
+  background-color: var(--dark-blue);
+}
+
+.footer__icon {
+  fill: white;
+  stroke: white;
+}
+
 .hero {
   background-color: var(--white);
   flex-direction: column;
