@@ -152,26 +152,29 @@ a:active {
 }
 
 .article__body {
-  padding: var(--padding-medium);
+  padding: var(--padding-large);
   padding-bottom: var(--padding-x-large);
 }
 
 .article__subtitle, .article__text {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  line-height: 1.5;
   font-weight: 300;
   color: var(--grayish-blue);
 }
 
 .article__title {
   margin-bottom: var(--margin-medium);
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 300;
   color: var(--dark-blue);
   text-align: left;
 }
 
 .article__subtitle {
   margin-bottom: var(--margin-medium);
+  font-size: 1.4rem;
 }
 
 .header {
