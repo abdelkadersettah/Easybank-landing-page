@@ -177,6 +177,12 @@ a:active {
   font-size: 1.4rem;
 }
 
+.social-nav__icon {
+  fill: var(--white);
+  width: 21px;
+  height: 20px;
+}
+
 .header {
   background-color: var(--white);
   justify-content: space-between;
