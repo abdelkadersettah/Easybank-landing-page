@@ -177,10 +177,23 @@ a:active {
   font-size: 1.4rem;
 }
 
+.social-nav__list {
+  background-color: yellow;
+  display: inline-block;
+}
+
+.social-nav__link:hover .social-nav__icon {
+  fill: green;
+}
+
 .social-nav__icon {
   fill: var(--white);
-  width: 21px;
+  width: 20px;
   height: 20px;
+}
+
+.social-nav__use {
+  width: 50rem;
 }
 
 .header {
