@@ -1,0 +1,27 @@
+[33m7903fda[m[33m ([m[1;36mHEAD -> [m[1;32mfooter[m[33m)[m changing the color of footer logo to white
+[33m904ac7d[m add footer html template
+[33m5cd4d43[m[33m ([m[1;32mmaster[m[33m, [m[1;32mfeatures-section[m[33m)[m finished article section
+[33m0dcf12a[m add padding to article section
+[33m4de7be7[m add article section cards and style it
+[33m922ba98[m centered the logo icon
+[33mca697ab[m finished features section style
+[33m51ef12e[m style features title
+[33m2f8068e[m add card components
+[33m10ae18f[m add features section HTML template
+[33maa0df93[m[33m ([m[1;32mhero-style[m[33m)[m finishing hero section
+[33m6e02456[m adding hover effect in nav menu and button
+[33m4dcd5e4[m increase the font size of main nav
+[33m290e9f1[m finishing the hero image
+[33mb54cd23[m finishing the hero image
+[33m3b01abd[m hero heading style and still working on hero image
+[33m6774cde[m[33m ([m[1;32mpage-header[m[33m)[m add main element
+[33md08bfa9[m finshed hamburger nav menu
+[33m4f8cc74[m working and mobile nav button
+[33m1370422[m working on header and navigation style
+[33m25c6042[m working on header and navigation style
+[33m971d70b[m add mainnav element
+[33m5b417b0[m add mainnav element
+[33m1b14398[m[33m ([m[1;32mbase-css[m[33m)[m initial flex layout
+[33m6d07076[m default style
+[33mdb16cb7[m default style
+[33ma593fba[m first-commit
