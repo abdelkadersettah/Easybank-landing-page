@@ -26,10 +26,11 @@
     color: inherit;
     font-size: 2rem;
     font-weight: 400;
+    transition: border 0.2s;
     &:active,
     &:hover {
       border-bottom: 3px solid transparent;
-      padding-bottom: 5px;
+      padding-bottom: 3px;
       background: linear-gradient(
           to right,
           var(--lime-green),

@@ -1,12 +1,19 @@
 .footer {
   background-color: var(--dark-blue);
+  padding: var(--padding-large) 0;
+  text-align: center;
   &__logo {
     &--img {
+      transform: scale(1.2);
     }
   }
   &__icon {
     fill: white;
     stroke: white;
+  }
+  &__copyright {
+    color: var(--grayish-blue);
+    margin-top: var(--margin-large);
   }
 }
 // icon style for facebook

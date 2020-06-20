@@ -1,0 +1,24 @@
+.footer-nav {
+  margin-bottom: var(--margin-x-large);
+  &__list {
+    color: var(--white);
+    &:not(:last-child) {
+      margin-bottom: var(--margin-medium);
+      text-align: center;
+    }
+  }
+  &__link {
+    color: inherit;
+    font-size: 1.8rem;
+
+    transition: all 0.2s;
+    &:active,
+    &:hover {
+      color: var(--lime-green);
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}

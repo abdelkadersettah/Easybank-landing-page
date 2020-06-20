@@ -36,3 +36,11 @@ a:active {
   cursor: pointer;
   display: inline-block;
 }
+//reset heading font
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font: inherit;
+}

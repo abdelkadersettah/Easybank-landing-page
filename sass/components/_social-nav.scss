@@ -1,20 +1,25 @@
 .social-nav {
-  &__primary {
-  }
+  margin: var(--margin-large) 0;
   &__list {
-    background-color: yellow;
     display: inline-block;
+    &:not(:last-child) {
+      margin-right: var(--margin-medium);
+    }
   }
 
   &__link {
+    &:active,
     &:hover .social-nav__icon {
       fill: green;
+      transform: scale(1.5) translateY(1px);
     }
   }
   &__icon {
     fill: var(--white);
     width: 20px;
     height: 20px;
+    transform: scale(1.2) translateY(0);
+    transition: all 0.2s;
   }
   &__use {
     width: 50rem;
