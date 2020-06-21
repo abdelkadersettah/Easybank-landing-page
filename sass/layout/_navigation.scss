@@ -9,24 +9,39 @@
   padding: var(--padding-large) 0;
   left: 10%;
   right: 10%;
-  color: var(--dark-blue);
+  color: var(--grayish-blue);
   display: none;
-
+  @include respond(tab-port) {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
   &--active {
     display: flex;
+  }
+  &__primary {
+    @include respond(tab-port) {
+      display: flex;
+    }
   }
 
   &__list {
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
       text-align: center;
+      @include respond(tab-port) {
+        margin-bottom: 0;
+
+        margin-right: var(--margin-medium);
+      }
     }
   }
   &__link {
     color: inherit;
     font-size: 2rem;
     font-weight: 400;
-    transition: border 0.2s;
+    transition: padding 0.2s;
     &:active,
     &:hover {
       border-bottom: 3px solid transparent;

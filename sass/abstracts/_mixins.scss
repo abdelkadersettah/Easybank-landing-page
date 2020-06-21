@@ -1,0 +1,35 @@
+// Media query Manager
+/* 0-600px phone
+  600 - 900px tablet portrait
+  900 - 1200 px tablet landscape
+  1200 - 1800 px is where our normal styles apply
+  1080 +++  big desktop
+
+ORDER : base + typography > general layout + grid > page layout > components
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 37.5em) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
+}

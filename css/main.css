@@ -1,4 +1,38 @@
 :root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --font-primary: 'Public Sans';
+  --font-size-primary: 1.8rem;
+  --padding-small: 01rem;
+  --padding-medium: 2rem;
+  --padding-large: 4rem;
+  --padding-x-large: 7rem;
+  --margin-small: 01rem;
+  --margin-medium: 2rem;
+  --margin-large: 3rem;
+  --margin-x-large: 5rem;
+}
+
+/* 0-600px phone
+  600 - 900px tablet portrait
+  900 - 1200 px tablet landscape
+  1200 - 1800 px is where our normal styles apply
+  1080 +++  big desktop
+
+ORDER : base + typography > general layout + grid > page layout > components
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+:root {
   box-sizing: border-box;
 }
 
@@ -12,6 +46,12 @@
 
 html {
   font-size: calc(30% + 0.5vw);
+}
+
+@media only screen and (min-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -79,26 +119,6 @@ h5 {
   display: none;
 }
 
-:root {
-  --dark-blue: hsl(233, 26%, 24%);
-  --lime-green: hsl(136, 65%, 51%);
-  --bright-cyan: hsl(192, 70%, 51%);
-  --grayish-blue: hsl(233, 8%, 62%);
-  --light-grayish-blue: hsl(220, 16%, 96%);
-  --very-light-gray: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --font-primary: 'Public Sans';
-  --font-size-primary: 1.8rem;
-  --padding-small: 01rem;
-  --padding-medium: 2rem;
-  --padding-large: 4rem;
-  --padding-x-large: 7rem;
-  --margin-small: 01rem;
-  --margin-medium: 2rem;
-  --margin-large: 3rem;
-  --margin-x-large: 5rem;
-}
-
 .btn {
   display: inline-block;
   font-size: 1.6rem;
@@ -124,6 +144,12 @@ h5 {
 
 .hamburger-btn {
   outline: none;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .hamburger-btn {
+    display: none;
+  }
 }
 
 .hamburger-btn--img {
@@ -232,6 +258,12 @@ h5 {
   display: none;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .header {
+    justify-content: space-around;
+  }
+}
+
 .main-nav {
   background-color: var(--white);
   position: absolute;
@@ -243,12 +275,27 @@ h5 {
   padding: var(--padding-large) 0;
   left: 10%;
   right: 10%;
-  color: var(--dark-blue);
+  color: var(--grayish-blue);
   display: none;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .main-nav {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
 }
 
 .main-nav--active {
   display: flex;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .main-nav__primary {
+    display: flex;
+  }
 }
 
 .main-nav__list:not(:last-child) {
@@ -256,11 +303,18 @@ h5 {
   text-align: center;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .main-nav__list:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: var(--margin-medium);
+  }
+}
+
 .main-nav__link {
   color: inherit;
   font-size: 2rem;
   font-weight: 400;
-  transition: border 0.2s;
+  transition: padding 0.2s;
 }
 
 .main-nav__link:active, .main-nav__link:hover {
