@@ -4,11 +4,11 @@
   z-index: 100;
   top: calc(var(--padding-large) * 2);
   border-radius: 0.4em;
-  width: 90%;
+  width: 80%;
   min-height: fit-content;
-  padding: var(--padding-medium) 0;
-  left: 5%;
-  right: 5%;
+  padding: var(--padding-large) 0;
+  left: 10%;
+  right: 10%;
   color: var(--dark-blue);
   display: none;
 

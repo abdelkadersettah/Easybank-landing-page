@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: calc(30% + 0.5vw);
 }
 
 body {
@@ -238,11 +238,11 @@ h5 {
   z-index: 100;
   top: calc(var(--padding-large) * 2);
   border-radius: 0.4em;
-  width: 90%;
+  width: 80%;
   min-height: fit-content;
-  padding: var(--padding-medium) 0;
-  left: 5%;
-  right: 5%;
+  padding: var(--padding-large) 0;
+  left: 10%;
+  right: 10%;
   color: var(--dark-blue);
   display: none;
 }
@@ -348,7 +348,7 @@ h5 {
   position: absolute;
   left: 0;
   padding: 0 calc(var(--padding-large) - 2%);
-  top: -38%;
+  top: -40%;
 }
 
 .hero__image--2 img {
