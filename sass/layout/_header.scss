@@ -13,7 +13,7 @@
   &__cta {
     display: none;
   }
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     justify-content: space-around;
   }
 }

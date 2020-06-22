@@ -11,7 +11,7 @@
   right: 10%;
   color: var(--grayish-blue);
   display: none;
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     position: static;
     display: flex;
     justify-content: flex-end;
@@ -21,7 +21,7 @@
     display: flex;
   }
   &__primary {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       display: flex;
     }
   }
@@ -30,7 +30,7 @@
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
       text-align: center;
-      @include respond(tab-port) {
+      @include respond(tab-land) {
         margin-bottom: 0;
 
         margin-right: var(--margin-medium);

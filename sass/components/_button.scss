@@ -26,7 +26,7 @@
 }
 .hamburger-btn {
   outline: none;
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     display: none;
   }
 

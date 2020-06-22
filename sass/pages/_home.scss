@@ -1,14 +1,24 @@
 .hero {
-  background-color: var(--white);
+  background-color: var(--very-light-gray);
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
+  @include respond(tab-land) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 
   &__inner {
     text-align: center;
     padding: 0 var(--padding-large);
-
     order: 2;
+    @include respond(tab-land) {
+      text-align: left;
+      order: 0;
+      padding: var(--padding-large);
+    }
   }
   &__image {
     position: relative;
@@ -16,10 +26,19 @@
     overflow: hidden;
     order: 1;
     height: 80vw;
+    @include respond(tab-land) {
+      overflow: visible;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 150%, -20% 150%);
+      width: 150%;
+      height: 80vh;
+    }
     &--1 {
       img {
         width: 100%;
         transform: translateY(-16%);
+        @include respond(tab-land) {
+          transform: scale(1.8) translateY(-3%) translateX(68px);
+        }
       }
     }
     &--2 {
@@ -27,6 +46,10 @@
       left: 0;
       padding: 0 calc(var(--padding-large) - 2%);
       top: -40%;
+      @include respond(tab-land) {
+        top: -15%;
+        right: -25%;
+      }
       img {
         width: 100%;
       }
