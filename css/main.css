@@ -380,6 +380,7 @@ h5 {
 
 .hero {
   background-color: var(--very-light-gray);
+  background-color: yellow;
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
@@ -387,6 +388,7 @@ h5 {
 
 @media only screen and (min-width: 56.25em) {
   .hero {
+    height: 80vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -418,10 +420,8 @@ h5 {
 
 @media only screen and (min-width: 56.25em) {
   .hero__image {
+    height: 100%;
     overflow: visible;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 150%, -20% 150%);
-    width: 150%;
-    height: 80vh;
   }
 }
 
