@@ -21,11 +21,13 @@
   }
   &__subtitle,
   &__text {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--grayish-blue);
     margin-bottom: var(--margin-small);
   }
   &__title {
+    font-size: 2rem;
+
     margin-bottom: var(--margin-small);
     text-align: left;
   }
