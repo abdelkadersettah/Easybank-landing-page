@@ -1,21 +1,22 @@
 .hero {
-  background-color: var(--white);
+  background-color: var(--very-light-gray);
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
   @include respond(tab-port) {
     flex-direction: row;
+    padding-bottom: 0;
   }
 
   &__inner {
     text-align: center;
     padding: 0 var(--padding-large);
     order: 2;
-    margin-top: 14em;
     @include respond(tab-port) {
+      margin: var(--margin-x-large) 0;
       text-align: left;
       order: 1;
-      width: 40%;
+      width: 45%;
     }
   }
   &__image {
@@ -23,9 +24,13 @@
     height: 50vw;
     position: relative;
     clip-path: polygon(-100% 0%, 100% 0, 100% 200%, -100% 200%);
+    margin-bottom: 35%;
+
     @include respond(tab-port) {
       order: 2;
-      width: 60%;
+      width: 55%;
+      height: auto;
+      margin-bottom: 0;
     }
     img {
       width: 100%;
@@ -36,12 +41,47 @@
       width: 100%;
       left: 0;
       top: calc(170% - 100vw);
+      @include respond(tab-port) {
+        // top: -3%;
+        // left: 22%;
+        // transform: scale(1.7, 1.8);
+
+        // test
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        top: -3%;
+        overflow: hidden;
+        height: 100%;
+
+        img {
+          display: inline-block;
+          position: absolute;
+          top: -3%;
+          left: 21%;
+          transform: scale(1.6, 1.8);
+        }
+      }
     }
     &--2 {
       position: absolute;
       top: calc(128% - 100vw);
       transform: scale(0.95);
+
       @include respond(tab-port) {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        transform: scale(1);
+        top: -115%;
+        height: 200%;
+        overflow-x: hidden;
+        border: 2px solid red;
+        img {
+          display: inline-block;
+          position: absolute;
+          left: 17%;
+        }
       }
     }
   }

@@ -1,4 +1,38 @@
 :root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --font-primary: 'Public Sans';
+  --font-size-primary: 1.8rem;
+  --padding-small: 01rem;
+  --padding-medium: 2rem;
+  --padding-large: 4rem;
+  --padding-x-large: 7rem;
+  --margin-small: 01rem;
+  --margin-medium: 2rem;
+  --margin-large: 3rem;
+  --margin-x-large: 5rem;
+}
+
+/* 0-700px phone
+  700 - 900px tablet portrait
+  900 - 1200 px tablet landscape
+  1200 - 1800 px desktop
+  1080 +++  big desktop
+
+ORDER : base + typography > general layout + grid > page layout > components
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+:root {
   box-sizing: border-box;
 }
 
@@ -79,40 +113,6 @@ h5 {
   display: none;
 }
 
-:root {
-  --dark-blue: hsl(233, 26%, 24%);
-  --lime-green: hsl(136, 65%, 51%);
-  --bright-cyan: hsl(192, 70%, 51%);
-  --grayish-blue: hsl(233, 8%, 62%);
-  --light-grayish-blue: hsl(220, 16%, 96%);
-  --very-light-gray: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --font-primary: 'Public Sans';
-  --font-size-primary: 1.8rem;
-  --padding-small: 01rem;
-  --padding-medium: 2rem;
-  --padding-large: 4rem;
-  --padding-x-large: 7rem;
-  --margin-small: 01rem;
-  --margin-medium: 2rem;
-  --margin-large: 3rem;
-  --margin-x-large: 5rem;
-}
-
-/* 0-700px phone
-  700 - 900px tablet portrait
-  900 - 1200 px tablet landscape
-  1200 - 1800 px desktop
-  1080 +++  big desktop
-
-ORDER : base + typography > general layout + grid > page layout > components
-
-$breakpoint argument choices:
--phone
--tab-port
--tab-land
--big-desktop
-*/
 .btn {
   display: inline-block;
   font-size: 1.6rem;
@@ -235,7 +235,6 @@ $breakpoint argument choices:
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-medium) var(--padding-large);
-  position: relative;
 }
 
 .header__logo--img {
@@ -335,15 +334,16 @@ $breakpoint argument choices:
 }
 
 .hero {
-  background-color: var(--white);
+  background-color: var(--very-light-gray);
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 37.5em) {
   .hero {
     flex-direction: row;
+    padding-bottom: 0;
   }
 }
 
@@ -351,14 +351,14 @@ $breakpoint argument choices:
   text-align: center;
   padding: 0 var(--padding-large);
   order: 2;
-  margin-top: 14em;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 37.5em) {
   .hero__inner {
+    margin: var(--margin-x-large) 0;
     text-align: left;
     order: 1;
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -367,12 +367,15 @@ $breakpoint argument choices:
   height: 50vw;
   position: relative;
   clip-path: polygon(-100% 0%, 100% 0, 100% 200%, -100% 200%);
+  margin-bottom: 35%;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 37.5em) {
   .hero__image {
     order: 2;
-    width: 60%;
+    width: 55%;
+    height: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -387,10 +390,46 @@ $breakpoint argument choices:
   top: calc(170% - 100vw);
 }
 
+@media only screen and (min-width: 37.5em) {
+  .hero__image--1 {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: -3%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .hero__image--1 img {
+    display: inline-block;
+    position: absolute;
+    top: -3%;
+    left: 21%;
+    transform: scale(1.6, 1.8);
+  }
+}
+
 .hero__image--2 {
   position: absolute;
   top: calc(128% - 100vw);
   transform: scale(0.95);
+}
+
+@media only screen and (min-width: 37.5em) {
+  .hero__image--2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    transform: scale(1);
+    top: -115%;
+    height: 200%;
+    overflow-x: hidden;
+    border: 2px solid red;
+  }
+  .hero__image--2 img {
+    display: inline-block;
+    position: absolute;
+    left: 17%;
+  }
 }
 
 .features {
