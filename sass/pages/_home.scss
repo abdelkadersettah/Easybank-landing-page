@@ -11,7 +11,7 @@
     text-align: center;
     padding: 0 var(--padding-large);
     order: 2;
-    margin-top: 14em;
+    // margin-top: 14em;
     @include respond(tab-port) {
       text-align: left;
       order: 1;
@@ -23,6 +23,7 @@
     height: 50vw;
     position: relative;
     clip-path: polygon(-100% 0%, 100% 0, 100% 200%, -100% 200%);
+    margin-bottom: 35%;
     @include respond(tab-port) {
       order: 2;
       width: 60%;
