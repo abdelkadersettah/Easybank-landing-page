@@ -1,21 +1,22 @@
 .hero {
-  background-color: var(--white);
+  background-color: yellowgreen;
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
   @include respond(tab-port) {
     flex-direction: row;
+    padding-bottom: 0;
   }
 
   &__inner {
     text-align: center;
     padding: 0 var(--padding-large);
     order: 2;
-    // margin-top: 14em;
     @include respond(tab-port) {
+      margin: calc(var(--margin-x-large) * 2) 0;
       text-align: left;
       order: 1;
-      width: 40%;
+      width: 50%;
     }
   }
   &__image {
@@ -26,7 +27,10 @@
     margin-bottom: 35%;
     @include respond(tab-port) {
       order: 2;
-      width: 60%;
+      width: 50%;
+      height: auto;
+
+      // clip-path: inset(0 0 -200% -200%);
     }
     img {
       width: 100%;
@@ -37,12 +41,21 @@
       width: 100%;
       left: 0;
       top: calc(170% - 100vw);
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--2 {
       position: absolute;
       top: calc(128% - 100vw);
       transform: scale(0.95);
       @include respond(tab-port) {
+        //plan b modifie picture if overFlow dont work
+        // top: -8%;
+        // right: -12%;
+        //clip-path: polygon(-100% 12%, 83% 12%, 83% 200%, -100% 200%);
+        transform: scale(1.2);
+        top: 0;
       }
     }
   }

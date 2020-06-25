@@ -335,7 +335,7 @@ $breakpoint argument choices:
 }
 
 .hero {
-  background-color: var(--white);
+  background-color: yellowgreen;
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
@@ -344,6 +344,7 @@ $breakpoint argument choices:
 @media only screen and (min-width: 43.75em) {
   .hero {
     flex-direction: row;
+    padding-bottom: 0;
   }
 }
 
@@ -355,9 +356,10 @@ $breakpoint argument choices:
 
 @media only screen and (min-width: 43.75em) {
   .hero__inner {
+    margin: calc(var(--margin-x-large) * 2) 0;
     text-align: left;
     order: 1;
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -372,7 +374,8 @@ $breakpoint argument choices:
 @media only screen and (min-width: 43.75em) {
   .hero__image {
     order: 2;
-    width: 60%;
+    width: 50%;
+    height: auto;
   }
 }
 
@@ -387,10 +390,23 @@ $breakpoint argument choices:
   top: calc(170% - 100vw);
 }
 
+@media only screen and (min-width: 43.75em) {
+  .hero__image--1 {
+    top: 0;
+  }
+}
+
 .hero__image--2 {
   position: absolute;
   top: calc(128% - 100vw);
   transform: scale(0.95);
+}
+
+@media only screen and (min-width: 43.75em) {
+  .hero__image--2 {
+    transform: scale(1.2);
+    top: 0;
+  }
 }
 
 .features {
