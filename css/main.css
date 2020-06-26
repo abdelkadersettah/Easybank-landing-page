@@ -376,7 +376,6 @@ $breakpoint argument choices:
     width: 55%;
     height: auto;
     margin-bottom: 0;
-    overflow: hidden;
   }
 }
 
@@ -393,9 +392,20 @@ $breakpoint argument choices:
 
 @media only screen and (min-width: 46.88em) {
   .hero__image--1 {
-    top: -5%;
-    left: 20%;
-    transform: scale(1.5);
+    display: inline-block;
+    border: 2px solid red;
+    width: 100%;
+    position: relative;
+    top: -3%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .hero__image--1 img {
+    display: inline-block;
+    position: absolute;
+    top: -3%;
+    left: 21%;
+    transform: scale(1.6, 1.8);
   }
 }
 
@@ -407,12 +417,12 @@ $breakpoint argument choices:
 
 @media only screen and (min-width: 46.88em) {
   .hero__image--2 {
+    position: relative;
     display: inline-block;
     border: 2px solid wheat;
     width: 100%;
     transform: scale(1);
-    top: -20%;
-    position: relative;
+    top: -125%;
     height: 250%;
     overflow-x: hidden;
   }
@@ -420,8 +430,8 @@ $breakpoint argument choices:
     display: inline-block;
     position: absolute;
     top: 4%;
-    left: 15%;
-    transform: scale(1.1);
+    left: 17%;
+    transform: scale(1);
   }
 }
 

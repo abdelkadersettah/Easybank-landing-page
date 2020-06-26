@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
-
   @include respond(tab-port) {
     flex-direction: row;
     padding-bottom: 0;
@@ -32,7 +31,6 @@
       width: 55%;
       height: auto;
       margin-bottom: 0;
-      overflow: hidden;
     }
     img {
       width: 100%;
@@ -44,15 +42,26 @@
       left: 0;
       top: calc(170% - 100vw);
       @include respond(tab-port) {
-        // plan b modifie picture if overFlow dont work
-        top: -5%;
-        left: 20%;
-        transform: scale(1.5);
-        // img {
-        //   top: 4%;
-        //   left: 15%;
-        //   transform: scale(1.1);
-        // }
+        // top: -3%;
+        // left: 22%;
+        // transform: scale(1.7, 1.8);
+
+        // test
+        display: inline-block;
+        border: 2px solid red;
+        width: 100%;
+        position: relative;
+        top: -3%;
+        overflow: hidden;
+        height: 100%;
+
+        img {
+          display: inline-block;
+          position: absolute;
+          top: -3%;
+          left: 21%;
+          transform: scale(1.6, 1.8);
+        }
       }
     }
     &--2 {
@@ -61,21 +70,20 @@
       transform: scale(0.95);
 
       @include respond(tab-port) {
-        // plan b modifie picture if overFlow dont work
+        position: relative;
         display: inline-block;
         border: 2px solid wheat;
         width: 100%;
         transform: scale(1);
-        top: -20%;
-        position: relative;
+        top: -125%;
         height: 250%;
         overflow-x: hidden;
         img {
           display: inline-block;
           position: absolute;
           top: 4%;
-          left: 15%;
-          transform: scale(1.1);
+          left: 17%;
+          transform: scale(1);
         }
       }
     }
