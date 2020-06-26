@@ -235,7 +235,6 @@ $breakpoint argument choices:
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-medium) var(--padding-large);
-  position: relative;
 }
 
 .header__logo--img {
@@ -341,7 +340,7 @@ $breakpoint argument choices:
   padding-bottom: 6em;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 46.88em) {
   .hero {
     flex-direction: row;
     padding-bottom: 0;
@@ -354,12 +353,12 @@ $breakpoint argument choices:
   order: 2;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 46.88em) {
   .hero__inner {
-    margin: calc(var(--margin-x-large) * 2) 0;
+    margin: var(--margin-x-large) 0;
     text-align: left;
     order: 1;
-    width: 50%;
+    width: 45%;
   }
 }
 
@@ -371,11 +370,13 @@ $breakpoint argument choices:
   margin-bottom: 35%;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 46.88em) {
   .hero__image {
     order: 2;
-    width: 50%;
+    width: 55%;
     height: auto;
+    margin-bottom: 0;
+    overflow: hidden;
   }
 }
 
@@ -390,9 +391,11 @@ $breakpoint argument choices:
   top: calc(170% - 100vw);
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 46.88em) {
   .hero__image--1 {
-    top: 0;
+    top: -5%;
+    left: 20%;
+    transform: scale(1.5);
   }
 }
 
@@ -402,10 +405,23 @@ $breakpoint argument choices:
   transform: scale(0.95);
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 46.88em) {
   .hero__image--2 {
-    transform: scale(1.2);
-    top: 0;
+    display: inline-block;
+    border: 2px solid wheat;
+    width: 100%;
+    transform: scale(1);
+    top: -20%;
+    position: relative;
+    height: 250%;
+    overflow-x: hidden;
+  }
+  .hero__image--2 img {
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    left: 15%;
+    transform: scale(1.1);
   }
 }
 
