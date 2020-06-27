@@ -16,7 +16,7 @@
       margin: var(--margin-x-large) 0;
       text-align: left;
       order: 1;
-      width: 45%;
+      width: calc(50% - var(--margin-large));
     }
   }
   &__image {

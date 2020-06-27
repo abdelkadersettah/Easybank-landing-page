@@ -185,14 +185,34 @@ h5 {
   margin-top: var(--margin-x-large);
 }
 
+@media only screen and (min-width: 37.5em) {
+  .article__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .article__card {
   background-color: var(--white);
   margin-bottom: var(--margin-large);
 }
 
+@media only screen and (min-width: 37.5em) {
+  .article__card {
+    width: calc(50% - var(--margin-large));
+  }
+}
+
 .article__figure {
   border-radius: 0.5em;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .article__figure {
+    height: 45%;
+  }
 }
 
 .article__image {
@@ -404,7 +424,7 @@ h5 {
     margin: var(--margin-x-large) 0;
     text-align: left;
     order: 1;
-    width: 45%;
+    width: calc(50% - var(--margin-large));
   }
 }
 
