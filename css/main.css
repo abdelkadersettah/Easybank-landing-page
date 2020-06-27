@@ -145,6 +145,12 @@ h5 {
   width: 2em;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
 .card {
   text-align: center;
 }
@@ -261,13 +267,35 @@ h5 {
   display: none;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    padding: 0;
+  }
+}
+
 .main-nav--active {
   display: flex;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .main-nav__primary {
+    display: flex;
+  }
 }
 
 .main-nav__list:not(:last-child) {
   margin-bottom: var(--margin-medium);
   text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .main-nav__list:not(:last-child) {
+    margin-right: var(--margin-medium);
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__link {
@@ -423,7 +451,6 @@ h5 {
     top: -115%;
     height: 200%;
     overflow-x: hidden;
-    border: 2px solid red;
   }
   .hero__image--2 img {
     display: inline-block;
