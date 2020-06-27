@@ -11,15 +11,29 @@
   right: 10%;
   color: var(--dark-blue);
   display: none;
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    padding: 0;
+  }
 
   &--active {
     display: flex;
   }
-
+  &__primary {
+    @include respond(tab-port) {
+      display: flex;
+    }
+  }
   &__list {
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
       text-align: center;
+      @include respond(tab-port) {
+        margin-right: var(--margin-medium);
+        margin-bottom: 0;
+      }
     }
   }
   &__link {

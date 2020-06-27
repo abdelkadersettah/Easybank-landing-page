@@ -31,4 +31,7 @@
     height: 1.3em;
     width: 2em;
   }
+  @include respond(tab-port) {
+    display: none;
+  }
 }

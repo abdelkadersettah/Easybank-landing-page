@@ -16,7 +16,7 @@
       margin: var(--margin-x-large) 0;
       text-align: left;
       order: 1;
-      width: 45%;
+      width: calc(50% - var(--margin-large));
     }
   }
   &__image {
@@ -76,7 +76,6 @@
         top: -115%;
         height: 200%;
         overflow-x: hidden;
-        border: 2px solid red;
         img {
           display: inline-block;
           position: absolute;
@@ -94,9 +93,17 @@
 
   &__card-box {
     flex-direction: column;
+    @include respond(tab-port) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
   &__title {
     text-align: center;
+    @include respond(tab-port) {
+      text-align: left;
+    }
   }
 }
 .article {

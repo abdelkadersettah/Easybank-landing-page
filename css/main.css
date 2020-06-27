@@ -145,12 +145,36 @@ h5 {
   width: 2em;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
 .card {
   text-align: center;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 37.5em) {
+  .card__body {
+    text-align: left;
+  }
+}
+
 .card__figure {
   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .card__figure {
+    margin-bottom: var(--margin-large);
+  }
 }
 
 .article__title {
@@ -161,14 +185,34 @@ h5 {
   margin-top: var(--margin-x-large);
 }
 
+@media only screen and (min-width: 37.5em) {
+  .article__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .article__card {
   background-color: var(--white);
   margin-bottom: var(--margin-large);
 }
 
+@media only screen and (min-width: 37.5em) {
+  .article__card {
+    width: calc(50% - var(--margin-large));
+  }
+}
+
 .article__figure {
   border-radius: 0.5em;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .article__figure {
+    height: 45%;
+  }
 }
 
 .article__image {
@@ -261,13 +305,35 @@ h5 {
   display: none;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    padding: 0;
+  }
+}
+
 .main-nav--active {
   display: flex;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .main-nav__primary {
+    display: flex;
+  }
 }
 
 .main-nav__list:not(:last-child) {
   margin-bottom: var(--margin-medium);
   text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .main-nav__list:not(:last-child) {
+    margin-right: var(--margin-medium);
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__link {
@@ -358,7 +424,7 @@ h5 {
     margin: var(--margin-x-large) 0;
     text-align: left;
     order: 1;
-    width: 45%;
+    width: calc(50% - var(--margin-large));
   }
 }
 
@@ -423,7 +489,6 @@ h5 {
     top: -115%;
     height: 200%;
     overflow-x: hidden;
-    border: 2px solid red;
   }
   .hero__image--2 img {
     display: inline-block;
@@ -443,8 +508,22 @@ h5 {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .features__card-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .features__title {
   text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .article {
