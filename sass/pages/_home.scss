@@ -1,5 +1,5 @@
 .hero {
-  background-color: yellowgreen;
+  background-color: var(--very-light-gray);
   flex-direction: column;
   width: 100%;
   padding-bottom: 6em;
@@ -48,7 +48,6 @@
 
         // test
         display: inline-block;
-        border: 2px solid red;
         width: 100%;
         position: relative;
         top: -3%;
@@ -72,18 +71,16 @@
       @include respond(tab-port) {
         position: relative;
         display: inline-block;
-        border: 2px solid wheat;
         width: 100%;
         transform: scale(1);
-        top: -125%;
-        height: 250%;
+        top: -115%;
+        height: 200%;
         overflow-x: hidden;
+        border: 2px solid red;
         img {
           display: inline-block;
           position: absolute;
-          top: 4%;
           left: 17%;
-          transform: scale(1);
         }
       }
     }
