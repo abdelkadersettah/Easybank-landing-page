@@ -1,7 +1,17 @@
 .card {
   text-align: center;
-
+  @include respond(tab-port) {
+    width: 45%;
+  }
+  &__body {
+    @include respond(tab-port) {
+      text-align: left;
+    }
+  }
   &__figure {
     margin-bottom: 1em;
+    @include respond(tab-port) {
+      margin-bottom: var(--margin-large);
+    }
   }
 }

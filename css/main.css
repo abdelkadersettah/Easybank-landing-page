@@ -155,8 +155,26 @@ h5 {
   text-align: center;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 37.5em) {
+  .card__body {
+    text-align: left;
+  }
+}
+
 .card__figure {
   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .card__figure {
+    margin-bottom: var(--margin-large);
+  }
 }
 
 .article__title {
@@ -470,8 +488,22 @@ h5 {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .features__card-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .features__title {
   text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .article {
