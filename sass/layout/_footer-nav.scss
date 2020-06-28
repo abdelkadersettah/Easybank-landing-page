@@ -2,9 +2,9 @@
   margin-bottom: var(--margin-x-large);
   &__list {
     color: var(--white);
+    text-align: center;
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
-      text-align: center;
     }
   }
   &__link {
@@ -20,5 +20,12 @@
     &:active {
       transform: translateY(2px);
     }
+  }
+  @include respond(tab-port) {
+    grid-row: span 2;
+    margin-bottom: 0;
+    padding: 0 var(--padding-large);
+    width: max-content;
+    justify-self: center;
   }
 }

@@ -24,4 +24,8 @@
   &__use {
     width: 50rem;
   }
+  @include respond(tab-port) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
 }
