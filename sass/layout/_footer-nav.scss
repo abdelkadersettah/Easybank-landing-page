@@ -6,9 +6,6 @@
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
     }
-    @include respond(tab-port) {
-      text-align: left;
-    }
   }
   &__link {
     color: inherit;
@@ -27,5 +24,8 @@
   @include respond(tab-port) {
     grid-row: span 2;
     margin-bottom: 0;
+    padding: 0 var(--padding-large);
+    width: max-content;
+    justify-self: center;
   }
 }

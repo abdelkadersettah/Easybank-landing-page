@@ -48,6 +48,12 @@ html {
   font-size: calc(30% + 0.5vw);
 }
 
+@media only screen and (min-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-primary);
@@ -358,6 +364,12 @@ h5 {
   background-size: 100% 5px;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .main-nav__link {
+    font-size: 1.8rem;
+  }
+}
+
 .footer {
   background-color: var(--dark-blue);
   padding: var(--padding-large) 0;
@@ -426,12 +438,6 @@ h5 {
   margin-bottom: var(--margin-medium);
 }
 
-@media only screen and (min-width: 37.5em) {
-  .footer-nav__list {
-    text-align: left;
-  }
-}
-
 .footer-nav__link {
   color: inherit;
   font-size: 1.8rem;
@@ -451,6 +457,9 @@ h5 {
   .footer-nav {
     grid-row: span 2;
     margin-bottom: 0;
+    padding: 0 var(--padding-large);
+    width: max-content;
+    justify-self: center;
   }
 }
 
@@ -526,6 +535,7 @@ h5 {
     top: -3%;
     left: 21%;
     transform: scale(1.6, 1.8);
+    max-height: 95%;
   }
 }
 
@@ -549,6 +559,12 @@ h5 {
     display: inline-block;
     position: absolute;
     left: 17%;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .hero__image--2 {
+    top: -125%;
   }
 }
 
