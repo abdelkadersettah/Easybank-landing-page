@@ -17,6 +17,10 @@
     position: static;
     padding: 0;
   }
+  @include respond(tab-land) {
+    display: block;
+    width: max-content;
+  }
 
   &--active {
     display: flex;

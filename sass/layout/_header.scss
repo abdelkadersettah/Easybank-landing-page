@@ -4,7 +4,8 @@
   align-items: center;
 
   padding: var(--padding-medium) var(--padding-large);
-
+  @include respond(tab-land) {
+  }
   &__logo {
     &--img {
       height: 1.3em;
@@ -13,5 +14,8 @@
   }
   &__cta {
     display: none;
+    @include respond(tab-land) {
+      display: inline-block;
+    }
   }
 }

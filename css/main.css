@@ -54,6 +54,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 50em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-primary);
@@ -303,6 +309,12 @@ h5 {
   display: none;
 }
 
+@media only screen and (min-width: 50em) {
+  .header__cta {
+    display: inline-block;
+  }
+}
+
 .main-nav {
   background-color: var(--white);
   position: absolute;
@@ -324,6 +336,13 @@ h5 {
     justify-content: flex-end;
     position: static;
     padding: 0;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .main-nav {
+    display: block;
+    width: max-content;
   }
 }
 
@@ -539,6 +558,12 @@ h5 {
   }
 }
 
+@media only screen and (min-width: 50em) {
+  .hero__image--1 img {
+    left: 24%;
+  }
+}
+
 .hero__image--2 {
   position: absolute;
   top: calc(128% - 100vw);
@@ -559,12 +584,13 @@ h5 {
     display: inline-block;
     position: absolute;
     left: 17%;
+    max-height: 37.5em;
   }
 }
 
 @media only screen and (min-width: 50em) {
   .hero__image--2 {
-    top: -125%;
+    top: -120%;
   }
 }
 

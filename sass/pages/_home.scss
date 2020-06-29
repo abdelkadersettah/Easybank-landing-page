@@ -63,6 +63,11 @@
           max-height: 95%;
         }
       }
+      @include respond(tab-land) {
+        img {
+          left: 24%;
+        }
+      }
     }
     &--2 {
       position: absolute;
@@ -81,10 +86,11 @@
           display: inline-block;
           position: absolute;
           left: 17%;
+          max-height: 37.5em;
         }
       }
       @include respond(tab-land) {
-        top: -125%;
+        top: -120%;
       }
     }
   }
