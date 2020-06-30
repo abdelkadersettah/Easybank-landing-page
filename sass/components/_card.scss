@@ -14,4 +14,10 @@
       margin-bottom: var(--margin-large);
     }
   }
+  @include respond(desktop) {
+    width: calc(25% - var(--margin-large));
+    &:not(:last-child) {
+      margin-right: var(--margin-large);
+    }
+  }
 }

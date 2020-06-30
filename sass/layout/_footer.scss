@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     grid-template-rows: repeat(2, auto);
-    padding: var(--padding-large);
+    padding: var(--padding-large) var(--body-padding);
     grid-gap: var(--margin-large);
     align-items: center;
     justify-content: center;
