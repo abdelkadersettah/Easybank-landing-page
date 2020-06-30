@@ -10,7 +10,7 @@
 
   &__inner {
     text-align: center;
-    padding: 0 var(--padding-large);
+    padding: 0 var(--body-padding);
     order: 2;
     @include respond(tab-port) {
       margin: var(--margin-x-large) 0;
@@ -98,7 +98,7 @@
 .features {
   background-color: var(--light-grayish-blue);
   flex-direction: column;
-  padding: 0 var(--padding-large);
+  padding: 0 var(--body-padding);
   padding-top: var(--padding-x-large);
 
   &__card-box {
@@ -117,6 +117,6 @@
   }
 }
 .article {
-  padding: var(--padding-x-large) var(--padding-large);
+  padding: var(--padding-x-large) var(--body-padding);
   background-color: var(--very-light-gray);
 }

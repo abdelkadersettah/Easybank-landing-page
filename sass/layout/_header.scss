@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: var(--padding-medium) var(--padding-large);
+  padding: var(--padding-medium) var(--body-padding);
   @include respond(tab-land) {
   }
   &__logo {

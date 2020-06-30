@@ -18,7 +18,11 @@
   --padding-small: 01rem;
   --padding-medium: 2rem;
   --padding-large: 4rem;
+  --body-padding: 4rem;
   --padding-x-large: 7rem;
+  @include respond(tab-land) {
+    --body-padding: 6rem;
+  }
 
   //margin
 
