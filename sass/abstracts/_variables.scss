@@ -23,7 +23,9 @@
   @include respond(tab-land) {
     --body-padding: 6rem;
   }
-
+  @include respond(desktop) {
+    --body-padding: 8rem;
+  }
   //margin
 
   --margin-small: 01rem;

@@ -4,12 +4,15 @@
   align-items: center;
 
   padding: var(--padding-medium) var(--body-padding);
-  @include respond(tab-land) {
+  @include respond(desktop) {
   }
   &__logo {
     &--img {
       height: 1.3em;
       vertical-align: middle;
+    }
+    @include respond(desktop) {
+      transform: scale(1.2);
     }
   }
   &__cta {
