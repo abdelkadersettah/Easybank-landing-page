@@ -21,6 +21,9 @@ html {
   @include respond(desktop) {
     font-size: 62.5%;
   }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 body {
   font-family: var(--font-primary);

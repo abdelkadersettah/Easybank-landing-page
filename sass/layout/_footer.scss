@@ -5,6 +5,9 @@
   &__logo {
     &--img {
       transform: scale(1.2);
+      @include respond(desktop) {
+        transform: scale(1.4);
+      }
     }
   }
   &__icon {

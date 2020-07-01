@@ -79,6 +79,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-primary);
@@ -129,7 +135,7 @@ h5 {
 }
 
 .text--secondary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 
@@ -236,6 +242,12 @@ h5 {
   }
 }
 
+@media only screen and (min-width: 75em) {
+  .article__box {
+    margin-top: var(--margin-large);
+  }
+}
+
 .article__card {
   background-color: var(--white);
   margin-bottom: var(--margin-large);
@@ -244,6 +256,12 @@ h5 {
 @media only screen and (min-width: 37.5em) {
   .article__card {
     width: calc(50% - var(--margin-large));
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .article__card {
+    width: calc(25% - var(--margin-medium));
   }
 }
 
@@ -258,12 +276,30 @@ h5 {
   }
 }
 
+@media only screen and (min-width: 75em) {
+  .article__figure {
+    height: max-content;
+  }
+}
+
 .article__image {
   width: 100%;
 }
 
+@media only screen and (min-width: 75em) {
+  .article__image {
+    height: 20rem;
+  }
+}
+
 .article__body {
   padding: var(--padding-medium) var(--padding-large) var(--padding-large);
+}
+
+@media only screen and (min-width: 75em) {
+  .article__body {
+    padding: var(--padding-small) var(--padding-medium) var(--padding-large);
+  }
 }
 
 .article__subtitle, .article__text {
@@ -272,10 +308,22 @@ h5 {
   margin-bottom: var(--margin-small);
 }
 
+@media only screen and (min-width: 75em) {
+  .article__subtitle, .article__text {
+    font-size: 1.4rem;
+  }
+}
+
 .article__title {
   font-size: 2rem;
   margin-bottom: var(--margin-small);
   text-align: left;
+}
+
+@media only screen and (min-width: 75em) {
+  .article__title {
+    font-size: 1.8rem;
+  }
 }
 
 .article__link {
@@ -436,6 +484,12 @@ h5 {
   transform: scale(1.2);
 }
 
+@media only screen and (min-width: 75em) {
+  .footer__logo--img {
+    transform: scale(1.4);
+  }
+}
+
 .footer__icon {
   fill: white;
   stroke: white;
@@ -492,6 +546,12 @@ h5 {
 
 .footer-nav__list:not(:last-child) {
   margin-bottom: var(--margin-medium);
+}
+
+@media only screen and (min-width: 75em) {
+  .footer-nav__list {
+    text-align: left;
+  }
 }
 
 .footer-nav__link {

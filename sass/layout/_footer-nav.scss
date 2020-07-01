@@ -6,6 +6,10 @@
     &:not(:last-child) {
       margin-bottom: var(--margin-medium);
     }
+
+    @include respond(desktop) {
+      text-align: left;
+    }
   }
   &__link {
     color: inherit;

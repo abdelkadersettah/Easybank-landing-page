@@ -9,12 +9,18 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+    @include respond(desktop) {
+      margin-top: var(--margin-large);
+    }
   }
   &__card {
     background-color: var(--white);
     margin-bottom: var(--margin-large);
     @include respond(tab-port) {
       width: calc(50% - var(--margin-large));
+    }
+    @include respond(desktop) {
+      width: calc(25% - var(--margin-medium));
     }
   }
   &__figure {
@@ -23,24 +29,39 @@
     @include respond(tab-port) {
       height: 45%;
     }
+    @include respond(desktop) {
+      height: max-content;
+    }
   }
   &__image {
     width: 100%;
+    @include respond(desktop) {
+      height: 20rem;
+    }
   }
   &__body {
     padding: var(--padding-medium) var(--padding-large) var(--padding-large);
+    @include respond(desktop) {
+      padding: var(--padding-small) var(--padding-medium) var(--padding-large);
+    }
   }
   &__subtitle,
   &__text {
     font-size: 1.8rem;
     color: var(--grayish-blue);
     margin-bottom: var(--margin-small);
+    @include respond(desktop) {
+      font-size: 1.4rem;
+    }
   }
   &__title {
     font-size: 2rem;
 
     margin-bottom: var(--margin-small);
     text-align: left;
+    @include respond(desktop) {
+      font-size: 1.8rem;
+    }
   }
   &__link {
     color: var(--dark-blue);
