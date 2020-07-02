@@ -11,7 +11,7 @@ Easybank is landing page designed by frontendmentor and coded by [abdelkader set
 ## Overview
 
 we use Sass to build this landing page and javascript for hamburger button.
-check out this landing page at [Easybank](https://setaek.github.io//)
+check out this landing page at [Easybank](https://setaek.github.io/Easybank-landing-page/)
 
 ## Quick start
 
