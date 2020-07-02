@@ -7,6 +7,8 @@ Easybank is landing page designed by frontendmentor and coded by [abdelkader set
 - [Overview](#Overview)
 - [Quick start](#Quick-start)
 - [What's included](#What's-included)
+- [Copyright](#Copyright)
+
 
 ## Overview
 
@@ -57,3 +59,5 @@ Easybank-landing-page/
 │
 └── index.html
 ```
+## Copyright
+Copyright (c) 2020 design a credit to the original author frontendmentor coded by [abdelkader settah](https://github.com/setaek)
