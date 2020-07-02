@@ -5,8 +5,8 @@ Easybank is landing page designed by frontendmentor and coded by [abdelkader set
 ## Table of Contents
 
 - [Overview](#Overview)
-- [Quick-start](#Quick start)
-- [What's-included](#What's included)
+- [Quick start](#Quick-start)
+- [What's included](#What's-included)
 
 ## Overview
 
@@ -22,7 +22,7 @@ Several quick start options are available:
 ## What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-
+```text
 Easybank-landing-page/
 ├── css/
 │ ├── main.css
@@ -56,3 +56,4 @@ Easybank-landing-page/
 │
 │
 └── index.html
+```
