@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   @include respond(big-desktop) {
-    max-width: 90em;
+    max-width: 120rem;
     margin: 0 auto;
     background-color: var(--light-grayish-blue);
   }
