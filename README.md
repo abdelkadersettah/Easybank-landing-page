@@ -17,7 +17,7 @@ check out this landing page at [Easybank](https://setaek.github.io/Easybank-land
 
 Several quick start options are available:
 
-- Clone the repo: `git clone https://github.com/setaek` also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
+- Clone the repo: `git clone https://setaek.github.io/Easybank-landing-page/` also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
 
 ## What's included
 
