@@ -1,6 +1,6 @@
 # Easybank landing page
 
-Easybank is landing page designed by frontendmentor and coded by [abdelkader settah](https://github.com/setaek)
+Easybank is landing page designed by frontendmentor and coded by [abdelkader settah](https://github.com/abdelkadersettah)
 
 ## Table of Contents
 
@@ -12,13 +12,13 @@ Easybank is landing page designed by frontendmentor and coded by [abdelkader set
 ## Overview
 
 we use Sass to build this landing page and javascript for hamburger button.
-check out this landing page at [Easybank](https://setaek.github.io/Easybank-landing-page/)
+check out this landing page at [Easybank](https://abdelkadersettah.github.io/Easybank-landing-page/)
 
 ## Quick start
 
 Several quick start options are available:
 
-- Clone the repo: `git clone https://setaek.github.io/Easybank-landing-page/` also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts...
+- Clone the repo: `git clone https://abdelkadersettah.github.io/Easybank-landing-page/` also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts...
 
 ## What's included
 
@@ -62,4 +62,4 @@ Easybank-landing-page/
 
 ## Copyright
 
-Copyright (c) 2020 design a credit to the original author frontendmentor coded by [abdelkader settah](https://github.com/setaek)
+Copyright (c) 2020 design a credit to the original author frontendmentor coded by [abdelkader settah](https://github.com/abdelkadersettah)
